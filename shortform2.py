@@ -53,8 +53,7 @@ with tab1:
     for i, (category, url) in enumerate(sample_urls.items()):
         with cols[i]:
             st.subheader(category)
-            st.write(url)
-            st.button("복사하기", key=url)
+            st.code(url, language="text")
 
 # 두 번째 탭: 프롬프트 리스트
 with tab2:
